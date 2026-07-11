@@ -1,0 +1,35 @@
+.content-card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  height: 100%;
+  width: 100%;
+  overflow: visible;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.content-card-title{
+  font-size: clamp(30px, 5vw, 50px);
+    font-weight: bold;
+    margin: 20px;
+    margin-left: 40px;
+}
+
+
+.content-card-container::-webkit-scrollbar {
+    display: none;
+}
+
+@media (max-width: 768px) {
+  .content-card-container {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    padding: 0 12px;
+    gap: 12px;
+  }
+
+  .content-card-title {
+    margin: 12px;
+    margin-left: 12px;
+  }
+}

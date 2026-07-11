@@ -1,0 +1,12 @@
+{
+    "sections" : {
+        "disco_duro" : "Discos Duros",
+        "ram" : "Memorias RAM",
+        "tarjetas" : "Tarjetas Gráficas",
+        "ratones" : "Ratones",
+        "teclados" : "Teclados",
+        "monitores" : "Monitores",
+        "sillas" : "Sillas",
+        "auriculares" : "Auriculares"
+    }
+}

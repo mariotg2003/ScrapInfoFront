@@ -1,0 +1,39 @@
+.header_text{
+    text-align: center;
+    justify-content: center;
+    width: min(100%, 1200px);
+    margin: 0 auto;
+    padding: clamp(8px, 2vw, 24px) clamp(12px, 4vw, 40px);
+    box-sizing: border-box;
+
+}
+
+.header_title{
+    margin: clamp(8px, 1.5vw, 20px) 0;
+    font-size: clamp(28px, 7vw, 70px);
+    line-height: 1.1;
+    font-weight: bold;
+    text-wrap: balance;
+}
+
+.header_subtitle{
+    margin: clamp(8px, 1.5vw, 20px) 0;
+    font-size: clamp(20px, 5.5vw, 60px);
+    line-height: 1.15;
+    font-weight: bold;
+    text-wrap: balance;
+}
+
+.header_date{
+    margin: clamp(8px, 1.5vw, 20px) 0;
+    font-size: clamp(16px, 4vw, 50px);
+    line-height: 1.2;
+    font-weight: bold;
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 480px) {
+    .header_text {
+        padding-inline: 12px;
+    }
+}
