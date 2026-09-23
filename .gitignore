@@ -10,14 +10,32 @@ lerna-debug.log*
 node_modules
 dist
 dist-ssr
+coverage
+.nyc_output
+.vite
+*.tsbuildinfo
+.eslintcache
 *.local
+.env
+.env.*
+!.env.example
 docs/*.pdf
+
+# Python local environment
+.venv/
+venv/
+env/
+
+# Test reports
+test-results/
+playwright-report/
 
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
 .idea
 .DS_Store
+Thumbs.db
 *.suo
 *.ntvs*
 *.njsproj

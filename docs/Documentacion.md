@@ -10,6 +10,7 @@ El proyecto centraliza la consulta visual de distintos componentes de PC para fa
 - React 19
 - TypeScript
 - Vite
+- Vitest y React Testing Library para testing
 - CSS modular por componente
 - Fetch API para consumo de datos
 
@@ -55,7 +56,16 @@ Las categorias disponibles actualmente son:
 - `pnpm dev`: inicia el servidor de desarrollo.
 - `pnpm build`: compila TypeScript y genera la version de produccion.
 - `pnpm lint`: ejecuta ESLint sobre el proyecto.
+- `pnpm test`: ejecuta Vitest en modo interactivo.
+- `pnpm test:run`: ejecuta todos los tests una vez, adecuado para CI.
 - `pnpm preview`: previsualiza el build de produccion.
+
+## Testing
+Las pruebas se encuentran junto al codigo que validan:
+- `test/NormalizeNames.test.ts`: normalizacion de nombres y precios.
+- `test/Card.test.tsx`: renderizado de productos y apertura del enlace.
+
+Vitest usa `jsdom` y React Testing Library para simular el navegador y validar la interfaz.
 
 ## Requisitos
 - Node.js 18 o superior.
